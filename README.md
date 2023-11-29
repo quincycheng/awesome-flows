@@ -38,7 +38,7 @@ Get a secret from Conjur Cloud
 #### Download
 [flows/Quincy-ConjurCloud-GetSecret.json](flows/Quincy-ConjurCloud-GetSecret.json)
 #### Steps
-1. Follow the [General Instruction](#general-instruction)
+1. Follow the [General Instructions](#general-instructions)
 2. Update the following in the 4th step: "Get Secrets":
    - Hostname (replace apj-secrets with your tenant subdomain)
    - Map > identifier (replace it with the path to Conjur variable)
@@ -52,7 +52,7 @@ Get the script for apply public key from Dynamic Privilege Manager
 #### Download
 [flows/Quincy-DPA-GetPublicKeyScriptTemplate.json](flows/Quincy-DPA-GetPublicKeyScriptTemplate.json)
 #### Steps
-1. Follow the [General Instruction](#general-instruction)
+1. Follow the [General Instructions](#general-instructions)
 2. Update the following in the 3rd step: "Public-keys Scripts":
    - Hostname (replace apj-secrets with your tenant subdomain)
    - Map > workspaceId (replace it with the ID of the workspace)
@@ -84,7 +84,7 @@ Connects to ServiceNow API and fetch Linux CI from CMDB
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-iMHaNbpSfc?si=oOPCnQQM4JIEvtfB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Steps
-1. Follow the [General Instruction](#general-instruction)
+1. Follow the [General Instructions](#general-instructions)
 2. Update the following in the 4th step "Get Secrets":
    - Hostname (replace apj-secrets with your tenant subdomain)
    - Map > identifier (replace it with the path to Conjur variable)
