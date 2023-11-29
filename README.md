@@ -1,38 +1,50 @@
+# Table of Content
+- [Table of Content](#table-of-content)
 - [Overview](#overview)
 - [Use Cases](#use-cases)
   - [Enforcing Zero Trust on Cloud Workload \& Secrets](#enforcing-zero-trust-on-cloud-workload--secrets)
+    - [Demo](#demo)
 - [Building Blocks](#building-blocks)
   - [CyberArk](#cyberark)
     - [Conjur Cloud: Get Secrets](#conjur-cloud-get-secrets)
-      - [Usage:](#usage)
-      - [Steps:](#steps)
-      - [Expected Result:](#expected-result)
+      - [Usage](#usage)
+      - [Download](#download)
+      - [Steps](#steps)
+      - [Expected Result](#expected-result)
   - [Google](#google)
-    - [GenerateAI:](#generateai)
+    - [GenerateAI: generateText](#generateai-generatetext)
+      - [Usage](#usage-1)
+      - [Download](#download-1)
+      - [Demo](#demo-1)
   - [ServiceNow](#servicenow)
-    - [ServiceNow: Get Linux](#servicenow-get-linux)
+    - [ServiceNow: CMDB](#servicenow-cmdb)
+      - [Usage](#usage-2)
+      - [Download](#download-2)
+      - [Demo](#demo-2)
 
 
 # Overview
 A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/quincycheng).
-- **Use Cases** address real life scenarios.   Most of them connect multiple services to resolve the challenges
+- **Use Cases** address real life scenarios.   Most of them connect multiple services to resolve the challenges.  Best for inspiration.
 - **Building Blocks** are examples that work with a single services.   Best used as templates.
 
 # Use Cases
 
 ## Enforcing Zero Trust on Cloud Workload & Secrets
 
+### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dOGJQk8ndG0?si=cUianjMcWBuYVymF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 
 # Building Blocks
 
 ## CyberArk 
 
 ### Conjur Cloud: Get Secrets
-#### Usage:
+#### Usage
 Get a secret from Conjur Cloud
-#### Steps:
+#### Download
+[flows/Quincy-ConjurCloud-GetSecret.json](flows/Quincy-ConjurCloud-GetSecret.json)
+#### Steps
 1. Download & import [this Flows](flows/Quincy-ConjurCloud-GetSecret.json) to your CyberArk Identity Security Platform
 2. Inside Identity Admin, Create a service account with appropriate permissions
 3. Go to Identity Flows
@@ -45,13 +57,26 @@ Get a secret from Conjur Cloud
 7. Update the following in the 4th step: "Get Secrets":
    - Hostname (replace apj-secrets with your tenant subdomain)
    - Map > identifier (replace it with the path to Conjur variable)
-#### Expected Result:
+#### Expected Result
 A string that contains the value of the secrets from Conjur Cloud
 
 ## Google
 
-### GenerateAI: 
+### GenerateAI: generateText
+#### Usage
+Allows users to generate text from Google Generative AI by inputting prompts in web form from Flows
+#### Download
+[flows/Quincy-Google-GenerativeAI-Demo.json](flows/Quincy-Google-GenerativeAI-Demo.json)
+#### Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0ImLipCehYI?si=usAmTXqxwr_nHx1i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## ServiceNow
 
-### ServiceNow: Get Linux
+### ServiceNow: CMDB
+#### Usage
+Connects to ServiceNow API and fetch Linux CI from CMDB
+#### Download
+[flows/SNOW-CMDB-GetLinuxCI.json](flows/SNOW-CMDB-GetLinuxCI.json)
+#### Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-iMHaNbpSfc?si=oOPCnQQM4JIEvtfB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
