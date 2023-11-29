@@ -8,7 +8,7 @@
   - [CyberArk](#cyberark)
     - [Conjur Cloud: Get Secrets](#conjur-cloud-get-secrets)
   - [Google](#google)
-    - [GenerateAI: generateText](#generateai-generatetext)
+    - [Generative AI: generateText](#generative-ai-generatetext)
   - [ServiceNow](#servicenow)
     - [ServiceNow: CMDB](#servicenow-cmdb)
 
@@ -48,12 +48,13 @@ Get a secret from Conjur Cloud
 7. Update the following in the 4th step: "Get Secrets":
    - Hostname (replace apj-secrets with your tenant subdomain)
    - Map > identifier (replace it with the path to Conjur variable)
+
 #### Expected Result
 A string that contains the value of the secrets from Conjur Cloud
 
 ## Google
 
-### GenerateAI: generateText
+### Generative AI: generateText
 #### Usage
 Allows users to generate text from Google Generative AI by inputting prompts in web form from Flows
 #### Download
