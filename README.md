@@ -17,7 +17,7 @@
 
 # Overview
 A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/quincycheng).
-- **Use Cases** address real life scenarios.   Most of them connect multiple services to resolve the challenges.  Best for inspiration.
+- **Use Cases** address real life scenarios.   Multiple services are connected to resolve the challenges.  Best for inspiration.
 - **Building Blocks** are examples that work with a single services.   Best used as templates.
 
 # Use Cases
