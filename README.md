@@ -1,5 +1,5 @@
-# Awsome Flows
-- [Awsome Flows](#awsome-flows)
+# Table of Content
+- [Table of Content](#table-of-content)
 - [Overview](#overview)
 - [Use Cases](#use-cases)
   - [Cloud Security](#cloud-security)
