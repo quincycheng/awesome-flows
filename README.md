@@ -2,25 +2,15 @@
 - [Table of Content](#table-of-content)
 - [Overview](#overview)
 - [Use Cases](#use-cases)
-  - [Enforcing Zero Trust on Cloud Workload \& Secrets](#enforcing-zero-trust-on-cloud-workload--secrets)
-    - [Demo](#demo)
+  - [Cloud Security](#cloud-security)
+    - [Enforcing Zero Trust on Cloud Workload and Secrets](#enforcing-zero-trust-on-cloud-workload-and-secrets)
 - [Building Blocks](#building-blocks)
   - [CyberArk](#cyberark)
     - [Conjur Cloud: Get Secrets](#conjur-cloud-get-secrets)
-      - [Usage](#usage)
-      - [Download](#download)
-      - [Steps](#steps)
-      - [Expected Result](#expected-result)
   - [Google](#google)
     - [GenerateAI: generateText](#generateai-generatetext)
-      - [Usage](#usage-1)
-      - [Download](#download-1)
-      - [Demo](#demo-1)
   - [ServiceNow](#servicenow)
     - [ServiceNow: CMDB](#servicenow-cmdb)
-      - [Usage](#usage-2)
-      - [Download](#download-2)
-      - [Demo](#demo-2)
 
 
 # Overview
@@ -30,9 +20,10 @@ A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/qui
 
 # Use Cases
 
-## Enforcing Zero Trust on Cloud Workload & Secrets
+## Cloud Security
+### Enforcing Zero Trust on Cloud Workload and Secrets
 
-### Demo
+#### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dOGJQk8ndG0?si=cUianjMcWBuYVymF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Building Blocks
