@@ -41,6 +41,7 @@ Using Identity Flows as a scheduler, discover secrets in AWS Secrets Manager usi
 1. Follow the [General Instructions](#general-instructions)
 2. Update the frequency under "Periodically" in the 1st step "runtime settings".  
    Currently set to every 5 minutes
+3. Make sure "Schedule" is set as "Enabled"
 
 
 # Building Blocks
