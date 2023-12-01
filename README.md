@@ -4,6 +4,7 @@
 - [Use Cases](#use-cases)
   - [Cloud Security](#cloud-security)
     - [Enforcing Zero Trust on Cloud Workload and Secrets](#enforcing-zero-trust-on-cloud-workload-and-secrets)
+    - [Automatic Secrets Discovery using CyberArk Secrets Hub](#automatic-secrets-discovery-using-cyberark-secrets-hub)
 - [Building Blocks](#building-blocks)
   - [CyberArk](#cyberark)
     - [Conjur Cloud: Get Secrets](#conjur-cloud-get-secrets)
@@ -27,6 +28,20 @@ A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/qui
 
 #### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dOGJQk8ndG0?si=cUianjMcWBuYVymF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Automatic Secrets Discovery using CyberArk Secrets Hub 
+
+#### Usage
+Using Identity Flows as a scheduler, discover secrets in AWS Secrets Manager using Secrets Hub API (currently in beta)
+
+#### Download
+[flows/Quincy-SecretsHub-ScanAllSecretStores.json](flows/Quincy-SecretsHub-ScanAllSecretStores.json)
+
+#### Steps
+1. Follow the [General Instructions](#general-instructions)
+2. Update the frequency under "Periodically" in the 1st step "runtime settings".  
+   Currently set to every 5 minutes
+
 
 # Building Blocks
 
