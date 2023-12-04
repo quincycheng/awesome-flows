@@ -1,5 +1,3 @@
-# Awesome Flows
-- [Awesome Flows](#awesome-flows)
 - [Overview](#overview)
 - [Use Cases](#use-cases)
   - [Cloud Security](#cloud-security)

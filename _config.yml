@@ -1,6 +1,17 @@
 title: Awsome Flows
+github_username: quincycheng
+email: quincy.cheng@cyberark.com
+theme: minima
+description: A Collection of CyberArk Identity Flows by Quincy Cheng.
+
+
 author:
   name: Quincy Cheng
   email: quincy.cheng@cyberark.com
-description: A Collection of CyberArk Identity Flows by Quincy Cheng.
-theme: minima
+
+
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
