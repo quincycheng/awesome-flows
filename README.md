@@ -1,7 +1,7 @@
 - [Overview](#overview)
 - [Use Cases](#use-cases)
   - [Cloud Security: Enforcing Zero Trust on Cloud Workload and Secrets](#cloud-security-enforcing-zero-trust-on-cloud-workload-and-secrets)
-  - [Cloud Security: Automatic Secrets Discovery using CyberArk Secrets Hub](#cloud-security-automatic-secrets-discovery-using-cyberark-secrets-hub)
+  - [Secrets Management: Automatic Secrets Discovery using CyberArk Secrets Hub](#secrets-management-automatic-secrets-discovery-using-cyberark-secrets-hub)
 - [Building Blocks](#building-blocks)
   - [CyberArk Conjur Cloud: Get Secrets](#cyberark-conjur-cloud-get-secrets)
   - [CyberArk Dynamic Privilege Manager: Get Public Key Script](#cyberark-dynamic-privilege-manager-get-public-key-script)
@@ -23,7 +23,7 @@ A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/qui
 ### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dOGJQk8ndG0?si=cUianjMcWBuYVymF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Cloud Security: Automatic Secrets Discovery using CyberArk Secrets Hub 
+## Secrets Management: Automatic Secrets Discovery using CyberArk Secrets Hub 
 
 ### Usage
 Using Identity Flows as a scheduler, discover secrets in AWS Secrets Manager using Secrets Hub API (currently in beta)
