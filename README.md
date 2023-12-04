@@ -7,6 +7,7 @@
   - [CyberArk](#cyberark)
     - [Conjur Cloud: Get Secrets](#conjur-cloud-get-secrets)
     - [Dynamic Privilege Manager: Get Public Key Script](#dynamic-privilege-manager-get-public-key-script)
+    - [Secrets Hub: Scan Secrets Stores](#secrets-hub-scan-secrets-stores)
   - [Google](#google)
     - [Generative AI: generateText](#generative-ai-generatetext)
   - [ServiceNow](#servicenow)
@@ -72,6 +73,12 @@ Get the script for apply public key from Dynamic Privilege Manager
    - Map > workspaceId (replace it with the ID of the workspace)
    - Map > workspaceType (replace it with the type of the workspace, e.g. AWS)
 
+
+### Secrets Hub: Scan Secrets Stores
+
+#### Usage
+Periodically scan secrets stores in Secrets Hub for secret decovery
+See [Automatic Secrets Discovery using CyberArk Secrets Hub](#automatic-secrets-discovery-using-cyberark-secrets-hub) above for more details
 
 ## Google
 
