@@ -1,17 +1,13 @@
 - [Overview](#overview)
 - [Use Cases](#use-cases)
-  - [Cloud Security](#cloud-security)
-    - [Enforcing Zero Trust on Cloud Workload and Secrets](#enforcing-zero-trust-on-cloud-workload-and-secrets)
-    - [Automatic Secrets Discovery using CyberArk Secrets Hub](#automatic-secrets-discovery-using-cyberark-secrets-hub)
+  - [Cloud Security: Enforcing Zero Trust on Cloud Workload and Secrets](#cloud-security-enforcing-zero-trust-on-cloud-workload-and-secrets)
+  - [Cloud Security: Automatic Secrets Discovery using CyberArk Secrets Hub](#cloud-security-automatic-secrets-discovery-using-cyberark-secrets-hub)
 - [Building Blocks](#building-blocks)
-  - [CyberArk](#cyberark)
-    - [Conjur Cloud: Get Secrets](#conjur-cloud-get-secrets)
-    - [Dynamic Privilege Manager: Get Public Key Script](#dynamic-privilege-manager-get-public-key-script)
-    - [Secrets Hub: Scan Secrets Stores](#secrets-hub-scan-secrets-stores)
-  - [Google](#google)
-    - [Generative AI: generateText](#generative-ai-generatetext)
-  - [ServiceNow](#servicenow)
-    - [ServiceNow: CMDB](#servicenow-cmdb)
+  - [CyberArk Conjur Cloud: Get Secrets](#cyberark-conjur-cloud-get-secrets)
+  - [CyberArk Dynamic Privilege Manager: Get Public Key Script](#cyberark-dynamic-privilege-manager-get-public-key-script)
+  - [CyberArk Secrets Hub: Scan Secrets Stores](#cyberark-secrets-hub-scan-secrets-stores)
+  - [Google Generative AI: generateText](#google-generative-ai-generatetext)
+  - [ServiceNow: CMDB](#servicenow-cmdb)
 - [General Instructions](#general-instructions)
 
 
@@ -22,21 +18,20 @@ A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/qui
 
 # Use Cases
 
-## Cloud Security
-### Enforcing Zero Trust on Cloud Workload and Secrets
+## Cloud Security: Enforcing Zero Trust on Cloud Workload and Secrets
 
-#### Demo
+### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dOGJQk8ndG0?si=cUianjMcWBuYVymF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Automatic Secrets Discovery using CyberArk Secrets Hub 
+## Cloud Security: Automatic Secrets Discovery using CyberArk Secrets Hub 
 
-#### Usage
+### Usage
 Using Identity Flows as a scheduler, discover secrets in AWS Secrets Manager using Secrets Hub API (currently in beta)
 
-#### Download
+### Download
 [flows/Quincy-SecretsHub-ScanAllSecretStores.json](flows/Quincy-SecretsHub-ScanAllSecretStores.json)
 
-#### Steps
+### Steps
 1. Follow the [General Instructions](#general-instructions)
 2. Update the frequency under "Periodically" in the 1st step "runtime settings".  
    Currently set to every 5 minutes
@@ -45,26 +40,24 @@ Using Identity Flows as a scheduler, discover secrets in AWS Secrets Manager usi
 
 # Building Blocks
 
-## CyberArk 
-
-### Conjur Cloud: Get Secrets
-#### Usage
+## CyberArk Conjur Cloud: Get Secrets
+### Usage
 Get a secret from Conjur Cloud
-#### Download
+### Download
 [flows/Quincy-ConjurCloud-GetSecret.json](flows/Quincy-ConjurCloud-GetSecret.json)
-#### Steps
+### Steps
 1. Follow the [General Instructions](#general-instructions)
 2. Update the following in the 4th step: "Get Secrets":
    - Hostname (replace apj-secrets with your tenant subdomain)
    - Map > identifier (replace it with the path to Conjur variable)
 
-#### Expected Result
+### Expected Result
 A string that contains the value of the secrets from Conjur Cloud
 
-### Dynamic Privilege Manager: Get Public Key Script
-#### Usage
+## CyberArk Dynamic Privilege Manager: Get Public Key Script
+### Usage
 Get the script for apply public key from Dynamic Privilege Manager
-#### Download
+### Download
 [flows/Quincy-DPA-GetPublicKeyScriptTemplate.json](flows/Quincy-DPA-GetPublicKeyScriptTemplate.json)
 #### Steps
 1. Follow the [General Instructions](#general-instructions)
@@ -74,37 +67,34 @@ Get the script for apply public key from Dynamic Privilege Manager
    - Map > workspaceType (replace it with the type of the workspace, e.g. AWS)
 
 
-### Secrets Hub: Scan Secrets Stores
+## CyberArk Secrets Hub: Scan Secrets Stores
 
-#### Usage
+### Usage
 Periodically scan secrets stores in Secrets Hub for secret decovery
 See [Automatic Secrets Discovery using CyberArk Secrets Hub](#automatic-secrets-discovery-using-cyberark-secrets-hub) above for more details
 
-## Google
-
-### Generative AI: generateText
-#### Usage
+## Google Generative AI: generateText
+### Usage
 Allows users to generate text from Google Generative AI by inputting prompts in web form from Flows
-#### Download
+### Download
 [flows/Quincy-Google-GenerativeAI-Demo.json](flows/Quincy-Google-GenerativeAI-Demo.json)
-#### Demo
+### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ImLipCehYI?si=usAmTXqxwr_nHx1i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #### Steps
 Please follow the steps stated in YouTube Video
 
-## ServiceNow
 
-### ServiceNow: CMDB
-#### Usage
+## ServiceNow: CMDB
+### Usage
 Connects to ServiceNow API and fetch Linux CI from CMDB
 
-#### Download
+### Download
 [flows/SNOW-CMDB-GetLinuxCI.json](flows/SNOW-CMDB-GetLinuxCI.json)
 
-#### Demo
+### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-iMHaNbpSfc?si=oOPCnQQM4JIEvtfB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-#### Steps
+### Steps
 1. Follow the [General Instructions](#general-instructions)
 2. Update the following in the 4th step "Get Secrets":
    - Hostname (replace apj-secrets with your tenant subdomain)
