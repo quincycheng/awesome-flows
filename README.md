@@ -5,6 +5,7 @@
 - [Building Blocks](#building-blocks)
   - [CyberArk Conjur Cloud: Get Secrets](#cyberark-conjur-cloud-get-secrets)
   - [CyberArk Dynamic Privilege Manager: Get Public Key Script](#cyberark-dynamic-privilege-manager-get-public-key-script)
+  - [CyberArk Identity Security Platform: Platform Discovery](#cyberark-identity-security-platform-platform-discovery)
   - [CyberArk Secrets Hub: Scan Secrets Stores](#cyberark-secrets-hub-scan-secrets-stores)
   - [Google Generative AI: generateText](#google-generative-ai-generatetext)
   - [ServiceNow: CMDB](#servicenow-cmdb)
@@ -13,8 +14,8 @@
 
 # Overview
 A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/quincycheng).
-- **[Use Cases](#use-cases)** address real life scenarios.   Multiple services are connected to resolve the challenges.  Best for inspiration.
-- **[Building Blocks](#building-blocks)** are examples that work with a single services.   Best used as templates.
+- **[Use Cases](#use-cases)** address real life scenarios.   Multiple services are connected to resolve the challenges.  Great for inspiration.
+- **[Building Blocks](#building-blocks)** are examples that work with a single service.   Best used as templates.
 
 # Use Cases
 
@@ -66,12 +67,23 @@ Get the script for apply public key from Dynamic Privilege Manager
    - Map > workspaceId (replace it with the ID of the workspace)
    - Map > workspaceType (replace it with the type of the workspace, e.g. AWS)
 
+## CyberArk Identity Security Platform: Platform Discovery
+### Usage
+Get the URL of API & UI of services on Identity Security Platform
+### Download
+[flows/Quincy-PlatformDiscovery.json](flows/Quincy-PlatformDiscovery.json)
+#### Steps
+1. Follow the [General Instructions](#general-instructions)
+2. Update the following in the end step: "ISPSS Tenant Subdomain"
+   - text (replace apj-secrets with your tenant subdomain)
+
 
 ## CyberArk Secrets Hub: Scan Secrets Stores
 
 ### Usage
 Periodically scan secrets stores in Secrets Hub for secret decovery
 See [Automatic Secrets Discovery using CyberArk Secrets Hub](#automatic-secrets-discovery-using-cyberark-secrets-hub) above for more details
+
 
 ## Google Generative AI: generateText
 ### Usage
