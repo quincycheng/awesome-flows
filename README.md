@@ -121,7 +121,7 @@ Connects to ServiceNow API and fetch Linux CI from CMDB
 2. Inside Identity Admin, Create a service account with appropriate permissions
 3. Go to Identity Flows
 4. Under "Settings" > "Authoizations", create "new authorizations" with the info from the service account created in previous step
-5. Update the following in the 2nd step: "Create Click Token-OAuth2":
+5. Update the following in the 2nd step: "Create Token-OAuth2":
    - Authorizations
    - Hostname (replace apj-secrets with your tenant subdomain)
 6. Review all steps the update the Hostname (replace apj-secrets with your tenant subdomain)
