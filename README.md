@@ -20,11 +20,12 @@ A Collection of CyberArk Identity Flows by [Quincy Cheng](https://github.com/qui
 # Use Cases
 
 ## Cloud Security: Enforcing Zero Trust on Cloud Workload and Secrets
-
 ### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dOGJQk8ndG0?si=cUianjMcWBuYVymF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Secrets Management: Automatic Secrets Discovery using CyberArk Secrets Hub 
+### Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7SfxQNTwLmo?si=9QsLmvA528RpIXzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Usage
 Using Identity Flows as a scheduler, discover secrets in AWS Secrets Manager using Secrets Hub API (currently in beta)
