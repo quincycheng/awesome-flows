@@ -83,7 +83,7 @@ Get the URL of API & UI of services on Identity Security Platform
 
 ### Usage
 Periodically scan secrets stores in Secrets Hub for secret decovery
-See [Automatic Secrets Discovery using CyberArk Secrets Hub](#automatic-secrets-discovery-using-cyberark-secrets-hub) above for more details
+See [Secrets Management: Automatic Secrets Discovery using CyberArk Secrets Hub](#secrets-management-automatic-secrets-discovery-using-cyberark-secrets-hub) above for more details
 
 
 ## Google Generative AI: generateText
