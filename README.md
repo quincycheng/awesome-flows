@@ -8,6 +8,7 @@
   - [CyberArk Identity Security Platform: Platform Discovery](#cyberark-identity-security-platform-platform-discovery)
   - [CyberArk Secrets Hub: Scan Secrets Stores](#cyberark-secrets-hub-scan-secrets-stores)
   - [Google Generative AI: generateText](#google-generative-ai-generatetext)
+  - [Google Gemini API: generateText](#google-gemini-api-generatetext)
   - [ServiceNow: CMDB](#servicenow-cmdb)
 - [General Instructions](#general-instructions)
 
@@ -93,6 +94,16 @@ Allows users to generate text from Google Generative AI by inputting prompts in 
 [flows/Quincy-Google-GenerativeAI-Demo.json](flows/Quincy-Google-GenerativeAI-Demo.json)
 ### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ImLipCehYI?si=usAmTXqxwr_nHx1i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#### Steps
+Please follow the steps stated in YouTube Video
+
+## Google Gemini API: generateText
+### Usage
+Allows users to generate text from Google Generative AI by inputting prompts in web form from Flows
+### Download
+[flows/Quincy-Google-Gemini-Demo.json](flows/Quincy-Google-Gemini-Demo.json)
+### Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ML51dThWHcg?si=tU8qe9PC-hC46Wbf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #### Steps
 Please follow the steps stated in YouTube Video
 
