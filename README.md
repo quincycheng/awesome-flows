@@ -8,6 +8,7 @@
   - [CyberArk Dynamic Privilege Manager: Get Public Key Script](#cyberark-dynamic-privilege-manager-get-public-key-script)
   - [CyberArk Identity Security Platform: Platform Discovery](#cyberark-identity-security-platform-platform-discovery)
   - [CyberArk Privilege Cloud: Get All Safe](#cyberark-privilege-cloud-get-all-safe)
+  - [CyberArk Secrets Hub: Get Secrets](#cyberark-secrets-hub-get-secrets)
   - [CyberArk Secrets Hub: Scan Secrets Stores](#cyberark-secrets-hub-scan-secrets-stores)
   - [Google Generative AI: generateText](#google-generative-ai-generatetext)
   - [Google Gemini API: generateText](#google-gemini-api-generatetext)
@@ -144,6 +145,23 @@ Get a list of safe names from Privilege Cloud
 ### Steps
 
 Follow the [General Instructions](#general-instructions)
+
+
+## CyberArk Secrets Hub: Get Secrets
+
+### Usage
+
+Get a list of secrets from Secrets Hub
+
+### Download
+
+[flows/Quincy-SecretsHub-GetSecrets.json](flows/Quincy-SecretsHub-GetSecrets.json)
+
+### Steps
+
+1. Follow the [General Instructions](#general-instructions)
+2. Update the text in 2nd step "Subdomain Setting" (replace with your tenant subdomain)
+
 
 ## CyberArk Secrets Hub: Scan Secrets Stores
 
